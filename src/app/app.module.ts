@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CardContainerComponent } from './card-container/card-container.component';
+import { BucketContainerComponent } from './bucket-container/bucket-container.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardContainerComponent,
+    BucketContainerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,43 @@
+$bucketLabelBgColor: #7DDEEC;
+$bucketDroppableBgColor: #B1EBF4;
+.bucket-container {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    min-height: 350px;
+}
+
+.bucket-container-inner {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+		 -moz-transform: translateY(-50%);
+		  -ms-transform: translateY(-50%);
+		   -o-transform: translateY(-50%);
+		      transform: translateY(-50%);
+}
+
+.bucket {
+  min-width: 150px;
+  display: inline-block;
+  margin: 0 7px;
+}
+
+.bucket-label {
+  -webkit-border-top-right-radius: 9px;
+     -moz-border-top-right-radius: 9px;
+          border-top-right-radius: 9px;
+  -webkit-border-top-left-radius: 9px;
+     -moz-border-top-left-radius: 9px;
+          border-top-left-radius: 9px;
+  padding: 6px;
+  background-color: $bucketLabelBgColor;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.bucket-droppable {
+  min-height: 180px;
+  background-color: $bucketDroppableBgColor;
+}
