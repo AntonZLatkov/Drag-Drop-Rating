@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+.bucket-droppable .card {
+  display: block !important;
+  min-width: 50px !important;
+  padding: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.gu-mirror {
+  // position: absolute;
+}

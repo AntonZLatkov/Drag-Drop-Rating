@@ -1,7 +1,7 @@
 <div class="card-container">
-  <div class="card-container-inner">
-    <div [ngClass]="'card'" *ngFor="let card of cards">
-        {{ card }}
+  <div class="card-container-inner" [dragula]='"bag-one"'>
+    <div [ngClass]="'card'" *ngFor="let card of cards; let cardIndex = index" attr.data-index="{{ cardIndex }}" attr.id="card-{{ card.id }}">
+        {{ card.label }}
     </div>
   </div>
 </div>

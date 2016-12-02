@@ -1,20 +1,24 @@
 $cardBgColor: #FABAD0;
+$cardContainerBgColor: #d2deea;
 .card-container {
     margin: 0 auto;
     text-align: center;
-    position: relative;
     min-height: 150px;
+    position: relative;
+    background-color: $cardContainerBgColor;
 }
 
 .card-container-inner {
   width: 100%;
   position: absolute;
+  min-height: 40px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-		 -moz-transform: translateY(-50%);
-		  -ms-transform: translateY(-50%);
-		   -o-transform: translateY(-50%);
-		      transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+		 -moz-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		   -o-transform: translate(-50%, -50%);
+		      transform: translate(-50%, -50%);
 }
 
 .card {
@@ -29,4 +33,10 @@ $cardBgColor: #FABAD0;
   font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.container .card.gu-mirror,
+.container .card {
+  position: relative;
+  display: block;
 }

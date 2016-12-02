@@ -1,8 +1,8 @@
 <div class="bucket-container">
   <div class="bucket-container-inner">
-    <div [ngClass]="'bucket'" *ngFor="let bucket of buckets">
-      <div [ngClass]="'bucket-label'">{{ bucket }}</div>
-      <div [ngClass]="'bucket-droppable'"></div>
+    <div [ngClass]="'bucket'" *ngFor="let bucket of buckets; let bucketIndex = index" attr.data-index="{{ bucketIndex }}" attr.id="bucket-{{ bucket.id }}">
+      <div [ngClass]="'bucket-label'">{{ bucket.label }}</div>
+      <div [ngClass]="'bucket-droppable'" [dragula]='"bag-one"'></div>
     </div>
   </div>
 </div>
